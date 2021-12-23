@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var $text = $("<span>❤</span>");
+        if (Math.random() <= 0.02) $text = $("<span>TX!</span>");
+        var x = e.pageX, y = e.pageY;
+        $text.css({
+            "z-index": 1145141919810,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255 * Math.random())+","+~~(255 * Math.random())+","+~~(255 * Math.random())+")"
+        });
+        $("body").append($text);
+        $text.animate({
+            "top": y - 100,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $text.remove();
+        });
+    });
+});
+var OriginTitile = document.title; 
+document.addEventListener("visibilitychange", function () { 
+    if (document.title != "txtxj呼呼zzz") OriginTitile = document.title;
+    document.title = document.hidden ? "txtxj呼呼zzz" : OriginTitile;
+});
+</script>
+<html>
+{{- partial "mathjax.html" . -}}
+{{- partial "head.html" . -}}
+
+<body>
+  {{- partial "header.html" . -}}
+  <main id="content">
+    <!-- {{ partial "card/card-banner.html" . }} -->
+
+    <div class="single-container layout-block">
+      <div class="article-info">
+        <div class="article-header layout-padding">
+          {{ partial "card/card-cover.html" . }}
+        </div>
+
+        <div class="article-content">
+          <div class="markdown-body content-padding-large soft-size--large soft-style--box">
+            {{ .Content }}
+          </div>
+        </div>
+
+        {{- block "main" . }}{{- end -}}
+      </div>
+
+      {{- block "widget" . -}}{{- end -}}
+    </div>
+  </main>
+
+  {{- partial "footer.html" . -}}
+
+  {{- partial "footer-script" . -}}
+
+  {{- partial "footer-single" . -}}
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/hibiki.model.json"},"display":{"position":"left","width":80,"height":184},"mobile":{"show":false},"log":false});</script>
+</body>
+
+</html>
