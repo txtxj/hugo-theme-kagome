@@ -4,6 +4,7 @@ $mq-mb: "screen and (max-width: 767px)";
 :root {
   --layout-max-width: 1200px;
   --base-font: var(--font-base-size) / var(--font-base-lh) 'Open Sans', sans-serif;
+  --toc-font: var(--font-toc-size) / var(--font-base-lh) 'Open Sans', sans-serif;
   // 全局统一soft UI阴影 3px
   --soft-shadow: 3px;
 }
@@ -16,6 +17,7 @@ $mq-mb: "screen and (max-width: 767px)";
     --font-stress-size: 25px;
     --font-common-size: 18px;
     --font-base-size: 17px;
+    --font-toc-size: 14px;
     --font-base-lh: 1.8;
 
     // 导航栏，文章卡片，右侧widget
@@ -40,6 +42,7 @@ $mq-mb: "screen and (max-width: 767px)";
     --font-stress-size: 18px;
     --font-common-size: 14px;
     --font-base-size: 12px;
+    --font-toc-size: 12px;
     --font-base-lh: 1.4;
 
     // 导航栏，文章卡片，右侧widget
