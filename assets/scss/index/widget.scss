@@ -81,6 +81,13 @@
     left: 0;
     width: 64px;
     height: 64px;
+    transform: scale(1.0); 
+    transition: all .3s ease;
+  }
+
+  .author-avatar:hover {
+    transform: scale(1.2); 
+    transition: all .3s ease;
   }
 
   .author-name {
@@ -101,17 +108,17 @@
 .widget-toc {
   ul, ol {
     list-style: inherit;
-    padding-left: 20px;
+    padding-left: 15px;
 
     > li {
-      margin: 16px 0;
+      margin: 12px 0;
 
       &::marker {
         color: var(--theme-text-primary);
       }
 
       > a {
-        font: var(--base-font);
+        font: var(--toc-font);
         color: var(--theme-text-primary);
         transition: transitions(color, 0.3s);
 
@@ -133,7 +140,7 @@
     }
 
     a {
-      font: var(--base-font);
+      font: var(--toc-font);
       color: var(--theme-text-active);
       font-weight: bolder;
       border-bottom: 2px solid #dde0e0;
