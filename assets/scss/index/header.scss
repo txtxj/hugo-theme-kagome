@@ -6,14 +6,31 @@
     justify-content: space-between;
   }
 
+  &.avatar {
+    padding-left: 0px;
+  }
+
+  .author-avatar {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
   .header-logo h1 {
+    display: flex;
+    align-items: center;
     font-size: var(--font-large-size);
     font-weight: bolder;
-    font-family: monospace, sans-serif;
+    font-family: stxinwei, stcaiyun, simsun;
     white-space: nowrap;
     color: var(--theme-text-primary);
     transition: transitions((color, text-shadow), 0.3s);
     @include soft-text;
+    transition: all .3s ease;
+  }
+  .header-logo h1:hover {
+    transform: scale(1.1) translateX(20px);
+    transition: all .3s ease;
   }
 
   .header-nav {
