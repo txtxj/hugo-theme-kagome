@@ -92,6 +92,7 @@
   .author-name {
     height: 32px;
     line-height: 32px;
+    font-family: stxinwei;
     font-weight: bolder;
     font-size: var(--font-stress-size);
   }
@@ -99,6 +100,9 @@
   .author-desc {
     height: 32px;
     line-height: 32px;
+    font-family: MadokaRunesMW;
+    font-weight: bolder;
+    font-size: var(--font-base-size);
     border-top: 1px solid var(--theme-border-primary);
   }
 }
