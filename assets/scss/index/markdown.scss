@@ -826,12 +826,33 @@
 
 .markdown-body .highlight pre,
 .markdown-body pre {
+  position: relative;
   padding: 16px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
   background-color: #f6f8fa;
   border-radius: 3px;
+}
+
+.highlight-copy-btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    border: 0;
+    border-radius: 4px;
+    padding: 1px;
+    font-size: 0.8em;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #777;
+    min-width: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.highlight-copy-btn:hover {
+    background-color: #666;
 }
 
 .markdown-body pre code {
@@ -1031,3 +1052,5 @@
     color: var(--theme-text-low);
   }
 }
+
+
