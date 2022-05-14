@@ -155,6 +155,10 @@
       flex: 1 1 100%;
     }
 
+    &.mid {
+      flex: 1 1 50%;
+    }
+
     &:nth-child(1n) .article-card .card-cover {
       background-color: #e77842;
       background-image: linear-gradient(45deg, #e77842, #f7c068);
