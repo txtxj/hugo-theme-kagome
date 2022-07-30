@@ -846,6 +846,7 @@
     line-height: 1.8;
     color: #fff;
     background-color: #777;
+    background-color: rgba(.6,.6,.6,.6);
     min-width: 55px;
     text-align: center;
     cursor: pointer;
@@ -853,6 +854,13 @@
 
 .highlight-copy-btn:hover {
     background-color: #666;
+    background-color: rgba(.4,.4,.4,.9);
+}
+
+.markdown-code-copy {
+    width: 100%;
+    overflow: auto;
+    padding: 0px;
 }
 
 .markdown-body pre code {
