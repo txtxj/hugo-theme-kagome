@@ -36,6 +36,15 @@
     inset calc(-1 * var(--soft-shadow)) calc(-1 * var(--soft-shadow)) calc(var(--soft-shadow) * 2) var(--theme-bg-high);
 }
 
+@mixin soft-scrollbox ($radius) {
+  overflow: scroll;
+  border-radius: $radius;
+  background-color: var(--theme-bg-primary);
+  box-shadow:
+    var(--soft-shadow) var(--soft-shadow) calc(var(--soft-shadow) * 2) var(--theme-bg-shadow),
+    calc(-1 * var(--soft-shadow)) calc(-1 * var(--soft-shadow)) calc(var(--soft-shadow) * 2) var(--theme-bg-high);
+};
+
 @function transitions ($attribute, $duration: 0.3s) {
   $return: null;
   @each $var in $attribute {

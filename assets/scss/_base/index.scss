@@ -68,6 +68,10 @@ body {
   &.soft-style--box {
     @include soft-box(var(--radius));
   }
+
+  &.soft-style--scrollbox {
+    @include soft-scrollbox(var(--radius));
+  }
   
   &.soft-style--hover:hover {
     @include soft-box(var(--radius));
