@@ -11,7 +11,7 @@ features = ['posts', 'flex', 'card', 'Neumorphism', 'Soft UI', 'widgets']
 min_version = "0.83.1"
 
 [author]
-  name = "txtxj"
+  name = "莉娅酱"
   homepage = "https://github.com/txtxj"
 
 # If porting an existing theme

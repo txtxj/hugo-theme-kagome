@@ -1,6 +1,7 @@
 /* 设置滚动条的样式 */
 ::-webkit-scrollbar {
     width: 12px;
+    height: 10px;
 }
 
 /* 滚动槽 */
@@ -11,7 +12,7 @@
 /* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(127, 127, 127, 0.5);
 }
 
 /* 右下角 */

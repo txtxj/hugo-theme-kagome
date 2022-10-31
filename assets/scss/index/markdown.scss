@@ -137,12 +137,15 @@
 }
 
 .markdown-body a {
-  color: #0366d6;
+  color: var(--theme-text-url);
   text-decoration: none;
+  transition: all .3s ease;
 }
 
 .markdown-body a:hover {
+  color: var(--theme-text-url-hover);
   text-decoration: underline;
+  transition: all .3s ease;
 }
 
 .markdown-body strong {
@@ -796,12 +799,13 @@
 .markdown-body code {
   padding: .2em .4em;
   margin: 0;
-  font-size: 85%;
+  font-size: 100%;
   background-color: rgba(27,31,35,.05);
   border-radius: 3px;
 }
 
 .markdown-body pre {
+  color: #ffffff;
   word-wrap: normal;
 }
 
@@ -831,7 +835,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  background-color: #272822;
   border-radius: 3px;
 }
 
