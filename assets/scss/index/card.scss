@@ -123,6 +123,20 @@
 .card-container:hover {
   transform: scale(1.05); 
   transition: all .3s ease;
+  animation: index-link-active 1s cubic-bezier(.315,.605,.375,.925) forwards;
+}
+
+@keyframes
+index-link-active {
+  0% {
+    transform: perspective(2000px) rotateX(0) rotateY(0) translateZ(0)
+  }
+  16% {
+    transform: perspective(2000px) rotateX(10deg) rotateY(5deg) translateZ(32px)
+  }
+  100% {
+    transform: perspective(2000px) rotateX(0) rotateY(0) translateZ(65px)
+  }
 }
 
 /** article lsit style */
