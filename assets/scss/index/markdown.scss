@@ -97,6 +97,8 @@
 
 .markdown-body img {
   border-style: none;
+  transform: none;
+  transition: all .3s ease;
 }
 
 .markdown-body code,
@@ -782,6 +784,7 @@
 }
 
 .markdown-body img {
+  cursor:pointer;
   max-width: 100%;
   box-sizing: initial;
   background-color: #fff;

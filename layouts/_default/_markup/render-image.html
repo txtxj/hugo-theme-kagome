@@ -4,5 +4,5 @@
     <figcaption>{{ .Title }}</figcaption>
   </figure>
 {{ else }}
-  <p><img src="{{ .Destination | safeURL }}" alt="{{ .PlainText | safeHTML }}" loading="lazy" /></p>
+  <p><img src="{{ .Destination | safeURL }}" alt="{{ .PlainText | safeHTML }}" loading="lazy" onclick="showBig(this)"/></p>
 {{ end }}
