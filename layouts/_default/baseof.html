@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript">
-jQuery(document).ready(function($) {
-    $("body").click(function(e) {
-        var $text = $("<span>❤</span>");
-        if (Math.random() <= 0.02) $text = $("<span>TX!</span>");
-        var x = e.pageX, y = e.pageY;
-        $text.css({
-            "z-index": 1145141919810,
-            "top": y - 20,
-            "left": x,
-            "position": "absolute",
-            "font-weight": "bold",
-            "color": "rgb("+~~(255 * Math.random())+","+~~(255 * Math.random())+","+~~(255 * Math.random())+")"
-        });
-        $("body").append($text);
-        $text.animate({
-            "top": y - 100,
-            "opacity": 0
-        },
-        1500,
-        function() {
-            $text.remove();
-        });
-    });
-});
-var OriginTitile = document.title;
-document.addEventListener("visibilitychange", function () { 
-    if (document.title != "txtxj呼呼zzz") OriginTitile = document.title;
-    document.title = document.hidden ? "Txtxj呼呼zzz" : OriginTitile;
-});
+  jQuery(document).ready(function($) {
+      $("body").click(function(e) {
+          var $text = $("<span>❤</span>");
+          if (Math.random() <= 0.02) $text = $("<span>TX!</span>");
+          var x = e.pageX, y = e.pageY;
+          $text.css({
+              "z-index": 1145141919810,
+              "top": y,
+              "left": x,
+              "position": "absolute",
+              "pointer-events": "none",
+              "transform": "translate(-50%, -50%)",
+              "font-weight": "bold",
+              "color": "rgb("+~~(255 * Math.random())+","+~~(255 * Math.random())+","+~~(255 * Math.random())+")"
+          });
+          $("body").append($text);
+          $text.animate({
+              "top": y - 100,
+              "opacity": 0,
+              "fontSize": 0,
+          },
+          1500,
+          function() {
+              $text.remove();
+          });
+      });
+  });
+  var OriginTitile = document.title; 
+  document.addEventListener("visibilitychange", function () { 
+      if (document.title != "txtxj呼呼zzz") OriginTitile = document.title;
+      document.title = document.hidden ? "txtxj呼呼zzz" : OriginTitile;
+  });
 </script>
 <html>
 {{- partial "mathjax.html" . -}}
